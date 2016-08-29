@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
-
-from linked_list import Node, LinkedList
-
+from rmotr.Proj_2.linked_list.implementation import *
+from rmotr.Proj_2.linked_list.node import  *
 
 class LinkedListTestCase(unittest.TestCase):
 
@@ -11,7 +10,6 @@ class LinkedListTestCase(unittest.TestCase):
 
         self.assertTrue(l1.start is not None)
         self.assertEqual(l1.start.elem, 1)
-
         self.assertTrue(l1.end is not None)
         self.assertEqual(l1.end.elem, 3)
 
